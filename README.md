@@ -1,8 +1,8 @@
 # student_id 00012478
 
-## heroku
+## heroku https://webtech-cw2-00012478.herokuapp.com/
 
-## github
+## github https://github.com/00012478/web-tech-cw2-00012478/
 
 #### About
 
