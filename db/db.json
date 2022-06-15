@@ -1,26 +1,3 @@
 {
-  "tasks": [
-    {
-      "id": "ZnkePYGnLhhHFtaKFUIIO",
-      "title": "sdawdawdawdasd",
-      "task": "asdawda",
-      "createdTime": "Thu Jun 16 2022 00:26:43",
-      "completedTime": "Thu Jun 16 2022 00:26:49",
-      "isCanceled": false,
-      "isCompleted": true,
-      "isEdited": false,
-      "finishedTime": null
-    },
-    {
-      "id": "H1F3Lurepg_Gz8gdmSCEt",
-      "title": "wdadasdawd",
-      "task": "awdasdawdasdawdwa",
-      "createdTime": "Thu Jun 16 2022 00:26:53",
-      "completedTime": "Thu Jun 16 2022 00:26:54",
-      "isCanceled": false,
-      "isCompleted": true,
-      "isEdited": false,
-      "finishedTime": null
-    }
-  ]
+  "tasks": []
 }
