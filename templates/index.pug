@@ -1,0 +1,29 @@
+extends layout.pug 
+
+block content 
+  div.row 
+    if title == "Taskify - pending tasks"
+      button(id="createTodo").button ASSIGN A NEW TASK
+  ul
+    each val in data.tasks
+      li
+        div.todo.card
+          h2 #{val.title}
+          br
+          p #{val.task}
+          br
+          p Assigned: #{val.createdTime}
+          if val.isCompleted
+            br
+            p Done: #{val.completedTime}
+          if title == "Taskify - pending tasks"
+            div.buttons
+              button(data-complete=val.id).button MARK AS DONE
+              button(data-delete=val.id).button.danger DELETE
+  div(id="todoForm", data-todo="createTodo").card
+    div.inputs-row
+      input(type="text" id="todoTitle" name="todoTitle" required placeholder="Title")
+    textarea(name="", cols="30", rows="10" id="todoTask" required placeholder="Task description")
+    div.buttons
+      button(id="saveTodo").button SAVE
+      button(id="cancelSave").button.delete CANCEL

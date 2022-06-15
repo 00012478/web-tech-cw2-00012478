@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #223d35;
+  --secondary-color: #3f966e;
+  --hover-color: #8ac1a7;
+  --text-color-dark: rgb(255, 255, 255);
+  --text-color-light: #fff;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  min-width: max-content;
+  font-size: 16px;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.button.danger {
+  background-color: #7e2637;
+}
+
+.button.danger:hover {
+  background-color: #dc143c;
+}
+
+.link {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.link:hover {
+  outline: 2px solid #000;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 20px 0 0 0;
+}
+
+.todo {
+  margin: 20px 0;
+}
+
+#todoForm {
+  display: none;
+}
+
+#todoForm.show {
+  display: block;
+}
+
+#createTodo.hide {
+  display: none;
+}
+
+#createTodo {
+  display: block;
+  margin: 0 0 0 auto;
+}
+#todoForm {
+  width: 100%;
+  max-width: 1000px;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #fff;
+}
+#todoTask {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 0 0;
+}
+#todoTitle {
+  padding: 10px;
+  flex: 1 1 100px;
+}
+
+#todoPriority {
+  padding: 1em;
+}
+
+.inputs-row {
+  display: flex;
+  gap: 10px;
+}
